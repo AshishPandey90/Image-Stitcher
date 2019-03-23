@@ -7,8 +7,11 @@ Two greyscale images are stitched using sift and homography matrix concept. Impl
 The Repository contains:
 
 a) bunch of images to test the code
-b) fucnction files to implement homography
+
+b) function files to implement homography
+
 c) "Run Script Octave" file which has exact method call to test the implementation
+
 d) you will need download "SIFT demo progrem" from https://www.cs.ubc.ca/~lowe/keypoints/ for matching sift --> just download the zip file 
 from the site , unzip it , place all the contents of this repository in the unzipped folder --> open this folder in Octave/Matlab --> run
 commands from "Run Script Octave" file to test 
