@@ -1,0 +1,31 @@
+first = imread("im1grey.jpg");
+second = imread("im2grey.jpg");
+figure();imshow(first);
+figure();imshow(second);
+[Hbest, allHs] = getBestHomographyMarix("im1grey.jpg", "im2grey.jpg");
+bestImage = stitchImageWithBestH("im1grey.jpg", "im2grey.jpg", Hbest);
+figure();imshow(bestImage);
+
+
+
+
+
+
+Expected console output on running above script commands:
+>> first = imread("im1grey.jpg");
+>> second = imread("im2grey.jpg");
+>> figure();imshow(first);
+>> figure();imshow(second);
+>> [Hbest, allHs] = getBestHomographyMarix("im1grey.jpg", "im2grey.jpg");
+Finding keypoints...
+350 keypoints found.
+Finding keypoints...
+212 keypoints found.
+Found 31 matches.
+Total matching keypoints are:
+num =  31
+numHs =  1500
+threshold =  1
+maxInliers =  31
+>> bestImage = stitchImageWithBestH("im1grey.jpg", "im2grey.jpg", Hbest);
+>> figure();imshow(bestImage);
